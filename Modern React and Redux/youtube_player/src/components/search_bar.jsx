@@ -18,21 +18,10 @@ class SearchBar extends Component{
             </div>
         );
     }
-
+    
     onInputChange(term){
         this.setState({term});
         this.props.onSearchTermChange(term);
     }
-    //DETTE ER DEN LANGE MÅDE AT GØRE DET PÅ 
-    // render(){
-    //     return(
-    //         <input onChange={this.onInputChange}/>
-    //     )
-    // }
-
-    // //Custom event function (event er der fordi de fleste events (som onChange) kaldes med et event object.)
-    // onInputChange(event){
-    //   console.log(event.target.value)
-    // }
 }
 export default SearchBar;
